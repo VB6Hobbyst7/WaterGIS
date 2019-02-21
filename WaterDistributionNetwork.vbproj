@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC0FFA00-4311-48C9-B9DC-52F4729D0C52}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WaterDistributionNetwork.My.MyApplication</StartupObject>
+    <RootNamespace>WaterDistributionNetwork</RootNamespace>
+    <AssemblyName>WaterDistributionNetwork</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>1362990103_pipe-icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WaterDistributionNetwork.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WaterDistributionNetwork.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.4.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.Output, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.System, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Lorestan.MapTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MapTools\MapTools\bin\Debug\Lorestan.MapTools.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WaterEngine_AnalysisNetwork, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WaterEngine_AnalysisNetwork\WaterEngine_AnalysisNetwork\WaterEngine_AnalysisNetwork\bin\Release\WaterEngine_AnalysisNetwork.dll</HintPath>
+    </Reference>
+    <Reference Include="WaterEngine_DesignNetwork, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WaterEngine_DesignNetwork\WaterEngine_DesignNetwork\WaterEngine_DesignNetwork\bin\Release\WaterEngine_DesignNetwork.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlertForms\AlertCustom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlertForms\Exclamation_Form.Designer.vb">
+      <DependentUpon>Exclamation_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlertForms\Exclamation_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CheckInitialize\CheckInitialize_Cls.vb" />
+    <Compile Include="CheckInitialize\CheckInitialize_Form.Designer.vb">
+      <DependentUpon>CheckInitialize_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInitialize\CheckInitialize_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlsSynchronizer.vb" />
+    <Compile Include="Installer_WaterEngine.Designer.vb">
+      <DependentUpon>Installer_WaterEngine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Installer_WaterEngine.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LicenseInitializer.vb" />
+    <Compile Include="Maps.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WaterDistribution_MainForm.Designer.vb">
+      <DependentUpon>WaterDistribution_MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaterDistribution_MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlertForms\AlertCustom.resx">
+      <DependentUpon>AlertCustom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlertForms\Exclamation_Form.resx">
+      <DependentUpon>Exclamation_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckInitialize\CheckInitialize_Form.resx">
+      <DependentUpon>CheckInitialize_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaterDistribution_MainForm.resx">
+      <DependentUpon>WaterDistribution_MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4157.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddData.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border_icon14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastralJobAppendFile32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastralJobDiscard32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastralJobSet32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClearSelection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customize.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customize1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteScenario.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DockContainerItem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditFeatures.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExtractElevation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixZoomIn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixZoomOut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\followup.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\followup_Clear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\followup_Cleear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForwardExtent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullExtent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeometricNetwork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphes.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertFormElement.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LastExtent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapRefresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapView.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaskedTextBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewScenario.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenDoc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pattern1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personalizing.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pointer_large.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveMap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectAll.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectFeature.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowImages.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwichSelection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thisweek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toolidentify.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStripButton19.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStripGalleryItem216.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStripGalleryItem221.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStripGalleryItem223.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStripGalleryItem224.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStripGalleryItem229.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStripGalleryItem231.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStripGalleryItem235.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStripGalleryItem238.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStripGalleryItem239.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolStripMenuItem2.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolStripMenuItem3.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolStripMenuItem4.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserMahroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WasteWater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomIn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomOut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomToSelected.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Run.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertFormElement1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaskedTextBox1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveas_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1362990103_pipe-icon.ico" />
+    <None Include="Resources\Error.png" />
+    <None Include="Resources\Correct.png" />
+    <None Include="Resources\GeometricNetworkIncrementalLoader32.png" />
+    <None Include="Resources\show-overview-map2.png" />
+    <None Include="Resources\hide-overview-map2.png" />
+    <None Include="Resources\EditingExplode16.png" />
+    <None Include="Resources\UtilityNetworkJunctionAddTool16.png" />
+    <None Include="Resources\UtilityNetworkBarrierEdgeAddTool32.png" />
+    <None Include="Resources\UtilityNetworkBarrierEdgeAddTool16.png" />
+    <None Include="Resources\map_2.png" />
+    <None Include="Resources\NetworkAnalystSolve32.png" />
+    <None Include="Resources\GeodatabaseConnectionAddNew32.png" />
+    <None Include="Resources\GeodatabaseCreateFromFile32.png" />
+    <None Include="Resources\GeodatabaseConnectionsFolder32.png" />
+    <None Include="Resources\GeodatabaseConnection32.png" />
+    <None Include="Resources\GeodatabaseDistributedChangesSynchronize32.png" />
+    <None Include="Resources\DataAdd32.png" />
+    <None Include="Resources\GeodatabaseDistributedDataExtract32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
